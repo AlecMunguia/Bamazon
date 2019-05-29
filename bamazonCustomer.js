@@ -23,11 +23,6 @@ function GetAllItems() {
   });
 }
 
-
-// var num = 2;
-// num = num + 3
-// num = num - 1
-
 function UpdateInventory(amount, id) {
   var sqlString = `UPDATE items
                   SET stock_quantity = stock_quantity - ?
@@ -76,9 +71,11 @@ function Start(dbData) {
     .then(function (answer) {
       var item = FindItem(dbData, answer.item)
       if(item.stock_quantity < answer.quantity){
-        console.log("Not enough")
+        console.log("Insufficient Supply!")
+        Start();
       } else {
         UpdateInventory(answer.quantity, item.item_id)
+        console.log("Total Cost: $" + answer.item*answer.quantity)
       }
     })
 }
