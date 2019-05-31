@@ -76,6 +76,7 @@ function Start(dbData) {
       } else {
         UpdateInventory(answer.quantity, item.item_id)
         console.log("Total Cost: $" + answer.item*answer.quantity)
+        console.log("Your order has been placed!")
       }
     })
 }
