@@ -3,8 +3,8 @@
 Before running:
 npm install mysql and Inquirer
 
-    - [npm i mysql](https://www.npmjs.com/package/mysql)
-    - [npm i inquirer](https://www.npmjs.com/package/inquirer)
+[npm i mysql](https://www.npmjs.com/package/mysql)
+[npm i inquirer](https://www.npmjs.com/package/inquirer)
 
 ![Photo1](https://user-images.githubusercontent.com/47156161/58680494-98183100-832d-11e9-8399-e269f7b1e4ea.PNG)
 
